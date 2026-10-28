@@ -1,0 +1,28 @@
+/* Dashboard Owner */
+.kpi { padding: 1.1rem 1.2rem; height: 100%; }
+.kpi .kpi-icon {
+  width: 42px; height: 42px; border-radius: 14px; display: grid; place-items: center;
+  font-size: 1.2rem; color: #fff; margin-bottom: .7rem;
+  background: linear-gradient(135deg, var(--ae-indigo), var(--ae-violet));
+  box-shadow: 0 8px 18px rgba(99, 102, 241, .3);
+}
+.kpi .kpi-icon.sky   { background: linear-gradient(135deg, #38bdf8, #6366f1); }
+.kpi .kpi-icon.mint  { background: linear-gradient(135deg, #34d399, #38bdf8); }
+.kpi .kpi-icon.rose  { background: linear-gradient(135deg, #f472b6, #f59e0b); }
+.kpi .kpi-label { font-size: .78rem; color: var(--ink-soft); }
+.kpi .kpi-value { font-size: 1.45rem; font-weight: 700; line-height: 1.2; }
+
+.chart-wrap { position: relative; height: 320px; }
+
+.rank {
+  width: 30px; height: 30px; border-radius: 50%; display: inline-grid; place-items: center;
+  font-weight: 700; font-size: .85rem; background: rgba(99, 102, 241, .1); color: #4338ca;
+}
+.rank.top1 { background: linear-gradient(135deg, #fbbf24, #f59e0b); color: #fff; box-shadow: 0 4px 12px rgba(245, 158, 11, .4); }
+.rank.top2 { background: linear-gradient(135deg, #cbd5e1, #94a3b8); color: #fff; }
+.rank.top3 { background: linear-gradient(135deg, #fdba74, #d97706); color: #fff; }
+
+.status-row { display: flex; justify-content: space-between; align-items: center; padding: .55rem 0; border-bottom: 1px solid var(--line); text-decoration: none; color: var(--ink); }
+.status-row:last-child { border-bottom: 0; }
+.status-row:hover .count { color: var(--ae-indigo); }
+.status-row .count { font-weight: 700; font-size: 1.1rem; }
